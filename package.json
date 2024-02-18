@@ -11,6 +11,7 @@
     "puppeteer": "^22.0.0"
   },
   "scripts": {
-    "dev": "nodemon src/app.js -e view,hbs"
+    "dev": "nodemon src/app.js -e view,hbs",
+    "start": "node src/app.js"
   }
 }
