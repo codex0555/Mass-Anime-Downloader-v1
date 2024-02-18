@@ -120,6 +120,7 @@ body {
     color: #aaaaaa;
     background-color: #1c1c1c ;
     width: 14rem;
+    
 }
 
 .num{
@@ -131,7 +132,7 @@ body {
 }
 
 .card-more{
-    font-size: 11px;
+    font-size: 12px;
     position: relative;
     left: 0.9rem;
     top: 0.4rem;
