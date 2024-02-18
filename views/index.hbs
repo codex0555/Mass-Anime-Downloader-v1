@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="download container">
+        {{name}}
+        <div class="image">
+            <img src="{{imageani}}" alt="12">
+        </div>
+        <div class="describe">
+            <div class="name">{{namenick}}</div>
+            <div class="know-the-anime">{{animeview}}</div>
+            <div class="more">/more\</div>
+            <div class="pg-quality">
+                <div class="pg">PG 13</div>
+                <div class="quality">HD</div>
+            </div>
+            <div class="others-left">
+                <div class="type">Type: <span>?</span></div>
+                <div class="country">Country: <span>Japan</span></div>
+                <div class="premiried">Premiered: <span>{{type}}</span></div>
+                <div class="aired">Date aired: <span class="next-color">{{statusani}}</span></div>
+                <div class="broadcast">Broadcast: <span class="next-color">?</span></div>
+                <div class="status">Status: <span class="next-color">{{airedani}}</span></div>
+                <div class="genre">Genres: <span>{{genre}}</span></div>
+                <div class="duration">Duration: <span class="next-color">?</span></div>
+                <div class="episodes">Episodes: <span>{{nameid}}</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="take-down container">
+        <div class="down-title">Available Episodes:</div>
+        <div class="these-card">
+            {{#each eptv}}
+
+            <div class="down-network">
+                <div class="card1">
+                    <div class="num">{{ep_num}}</div>
+                    <div class="card-look"><img
+                            src="{{imageani}}"
+                            alt=""></div>
+                    <div class="card-more">
+                        <div class="q-360">360p <span><a href="{{quality360}}">Download</a></span></div>
+                        <div class="q-360">480p <span><a href="{{quality480}}">Download</a></span></div>
+                        {{#if quality720}}
+                        <div class="q-360">720p <span><a href="{{quality720}}">Download</a></span></div>
+                        {{else}}
+                        <div class="q-360"></div>
+                        {{/if}}
+                        {{#if quality1080}}
+                        <div class="q-360">1080p <span><a href="{{quality1080}}">Download</a></span></div>
+                        {{else}}
+                        <div class="q-360"></div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+</body>
+<script src="/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
