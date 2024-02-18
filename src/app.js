@@ -48,7 +48,7 @@ app.get("/download/:id", async (req, res) => {
 
         console.log(type);
 
-        const animeview = $('.anime_info_body_bg').find('p:eq(2)').text() || null;
+        const animeview = $('.anime_info_body_bg').find('p:eq(2)').text().split('Plot Summary:')[1] || null;
 
         console.log(animeview);
 
