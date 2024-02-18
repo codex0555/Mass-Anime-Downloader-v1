@@ -40,7 +40,7 @@ body {
 }
 
 .know-the-anime{
-    font-size: 10px;
+    font-size: 12px;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
     background-color: ;
@@ -82,7 +82,7 @@ body {
 
 .others-left{
     column-count: 2;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     top: 1rem;
     font-family: "Nunito", sans-serif;
@@ -105,7 +105,7 @@ body {
 }
 
 .down-title{
-    font-size: 15px;
+    font-size: 19px;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
 }
@@ -194,8 +194,8 @@ body {
         width: 100%;
     }
 
-    .name, .down-title{
-        font-size: 15px;
+    .name .down-title{
+        font-size: 17px;
     }
 
 }
