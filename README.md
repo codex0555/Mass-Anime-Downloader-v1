@@ -1,4 +1,4 @@
-# Mass-Anime-Downloader
+# Mass-Anime-Downloader-V1
 
 ### 1. Download Anime
 
