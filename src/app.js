@@ -66,7 +66,7 @@ app.get("/download/:id", async (req, res) => {
             //console.log(i);
 
             try {
-                const eplink = `https://api.anime-dex.workers.dev/download/${downname}-episode-${i}`;
+                const eplink = `https://api3.code5x.workers.dev/download/${downname}-episode-${i}`;
                 const epreq = await axios.get(eplink);
                 const epres = epreq.data;
 
